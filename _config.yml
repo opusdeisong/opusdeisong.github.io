@@ -100,9 +100,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: 'opusdeisong/opusdeisong.github.io'            # <gh-username>/<repo>
-    repo_id: 'R_kgDOH4BcPg'
+    repo_id: 'R_kgDOH5uHrg'
     category: 'General'
-    category_id: 'DIC_kwDOH4BcPs4CRC4K'
+    category_id: 'DIC_kwDOH5uHrs4CRJZM'
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang: 'ko'            # optional, default to the value of `site.lang`
