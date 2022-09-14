@@ -1,6 +1,6 @@
 ---
 title: Updating About page
-categories: [Daily, Sideproject]
+categories: [2022-2, Sideproject]
 tags: [TIL]
 ---
 

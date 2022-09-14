@@ -1,6 +1,6 @@
 ---
 title: Basic Recursion
-categories: [Daily, BOJ]
+categories: [2022-2, BOJ]
 tags: [BOJ]
 ---
 

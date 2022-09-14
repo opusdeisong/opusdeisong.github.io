@@ -1,6 +1,6 @@
 ---
 title: Fixing Giscus
-categories: [Daily, Sideproject]
+categories: [Fixing_Blog]
 tags: [TIL]
 ---
 

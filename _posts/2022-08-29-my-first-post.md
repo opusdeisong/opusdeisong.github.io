@@ -1,6 +1,6 @@
 ---
 title: First TIL
-categories: [Daily, React]
+categories: [2022-2, Daily]
 tags: [React]
 ---
 

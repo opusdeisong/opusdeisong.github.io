@@ -1,7 +1,7 @@
 ---
 title: Something I've learned in a recent project
 date: 2022-09-01
-categories: [Daily, Sideproject]
+categories: [2022-2, Sideproject]
 tags: [TIL]
 ---
 
