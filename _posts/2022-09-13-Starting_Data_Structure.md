@@ -1,7 +1,7 @@
 ---
 title: Starting Data structure(Lecture 1.1)
-categories: [2022-2, Datastructure]
-tags: [BOJ]
+categories: [2022-2, Data_structure]
+tags: [Data_structure]
 ---
 
 # Daily Review
