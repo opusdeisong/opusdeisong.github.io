@@ -1,7 +1,7 @@
 ---
 title: Fixing Giscus
 categories: [Fixing_Blog]
-tags: [TIL]
+tags: [Blog]
 ---
 
 # Why I messed up with my Giscus

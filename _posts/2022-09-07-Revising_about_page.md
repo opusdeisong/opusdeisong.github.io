@@ -1,7 +1,7 @@
 ---
 title: Updating About page
-categories: [2022-2, Sideproject]
-tags: [TIL]
+categories: [Fixing_Blog]
+tags: [Blog]
 ---
 
 # Align
