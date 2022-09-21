@@ -15,8 +15,8 @@ tags: [Linear_Algebra]
 > While using algebra if you are trying to solve some simple linear systems. But if you have a question including 100 equations and 100 unknowns it would be nearly impossible for you to solve with the methods in algebra. And that's where matrices come in. Matrices will help you solve many complicated questions faster.
 >
 >>### Linear systems in two unknowns
->>
->> Before starting with matrices we should first learn what is a linear system. A Linear system is a system of equations, defined for a set of unknown variables, where each of the variables is linear. So in order to have a foundational underatanding of what we're doing when we solve systems, we need to review basic methods for solving systems. Below is the examples of the solving method.
+>>>
+>>Before starting with matrices we should first learn what is a linear system. A Linear system is a system of equations, defined for a set of unknown variables, where each of the variables is linear. So in order to have a foundational underatanding of what we're doing when we solve systems, we need to review basic methods for solving systems. Below is the examples of the solving method.
 >>
 >>#### Substitution method
 >>
