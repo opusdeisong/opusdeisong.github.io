@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://user-images.githubusercontent.com/105193807/186594393-9d899616-f10f-4b20-b295-db404ca9a51f.png
+avatar: https://user-images.githubusercontent.com/105193807/191658441-c46768bf-6d48-4bb8-9b5c-8ed66d96bdc9.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
