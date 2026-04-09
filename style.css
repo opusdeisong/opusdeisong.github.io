@@ -6,8 +6,8 @@
   --surface: #f8fafc;
   --text: #1e293b;
   --muted: #64748b;
-  --accent: #4f6df5;
-  --accent-hover: #3b5de7;
+  --accent: #3451b2;
+  --accent-hover: #2b3f8e;
   --accent-light: #eef1fe;
   --border: #e2e8f0;
   --gold: #e8a317;
@@ -16,21 +16,6 @@
   --radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #131620;
-    --surface: #1c2030;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --accent: #818cf8;
-    --accent-hover: #a5b4fc;
-    --accent-light: #1e2340;
-    --border: #2d3348;
-    --gold: #fbbf24;
-    --silver: #94a3b8;
-    --bronze: #f59e0b;
-  }
-}
 
 html {
   font-size: 16px;
@@ -56,11 +41,6 @@ body {
   -webkit-backdrop-filter: blur(12px);
 }
 
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    background: rgba(19, 22, 32, 0.85);
-  }
-}
 
 .nav-inner {
   max-width: 720px;
@@ -158,37 +138,24 @@ h2 {
 
 /* ── Publications ── */
 .pub {
-  margin-bottom: 1.2rem;
-  padding: 1rem 1.2rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  transition: box-shadow 0.15s;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.pub:hover {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+.pub:last-child {
+  border-bottom: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  .pub:hover {
-    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.04);
-  }
-}
 
 .pub-title {
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--accent);
+  color: var(--text);
   text-decoration: none;
   line-height: 1.4;
 }
 
 a.pub-title:hover { text-decoration: underline; }
-
-span.pub-title {
-  color: var(--text);
-}
 
 .pub-meta {
   font-size: 0.82rem;
@@ -212,6 +179,44 @@ span.pub-title {
   color: #fff;
   vertical-align: middle;
 }
+
+/* ── Tags ── */
+.pub-tags {
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  letter-spacing: 0.01em;
+}
+
+.tag-agents {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.tag-alignment {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.tag-applied {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.tag-education {
+  background: #fef3c7;
+  color: #92400e;
+}
+
 
 .pub-summary {
   font-size: 0.85rem;
@@ -296,11 +301,12 @@ span.pub-title {
 
 /* ── Experience ── */
 .exp {
-  margin-bottom: 1rem;
-  padding: 0.8rem 1.2rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.exp:last-child {
+  border-bottom: none;
 }
 
 .exp-header {
@@ -330,18 +336,52 @@ span.pub-title {
 
 .inline-link:hover { text-decoration: underline; }
 
-/* ── Footer ── */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
+/* ── Hamburger ── */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
 }
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.7rem; }
   .container { padding: 2rem 1rem 1.5rem; }
   .exp-header { flex-direction: column; gap: 0.2rem; }
+
+  .hamburger { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 0.75rem 1.5rem;
+    gap: 0.75rem;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .navbar { position: relative; }
+  .nav-inner { position: relative; }
 }
