@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +16,9 @@
 <nav class="navbar">
   <div class="nav-inner">
     <a href="/" class="nav-logo">Woojung Song</a>
+    <button class="hamburger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-links">
       <a href="/">Home</a>
       <a href="publications.html">Publications</a>
@@ -53,7 +57,7 @@
 
     <div class="exp">
       <div class="exp-header">
-        <strong>LG Electronics — AI Speaker SW Developer Intern</strong>
+        <strong>LG Electronics — AI Research Intern</strong>
         <span class="exp-date">2024.03 – 2024.06</span>
       </div>
       <p>H&A Sound/Image Intelligence R&D Lab</p>
@@ -91,10 +95,6 @@
   </section>
 
 </div>
-
-<footer>
-  <p>&copy; 2026 Woojung Song</p>
-</footer>
 
 </body>
 </html>
