@@ -1,4 +1,96 @@
----
-layout: home
-# Index page
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woojung Song</title>
+  <meta name="description" content="Woojung Song - M.S. in Data Science at Seoul National University">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Woojung Song</a>
+    <div class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Bio -->
+  <header class="hero">
+    <h1>Woojung Song</h1>
+    <p class="subtitle">M.S. in Data Science, Seoul National University <span class="muted">(Sep 2025 ~)</span></p>
+    <p class="subtitle">B.S. in Information System, Hanyang University</p>
+    <nav class="links">
+      <a href="https://github.com/opusdeisong" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/opusdeisong/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <!-- Research Interests -->
+  <section>
+    <h2>Research Interests</h2>
+    <div class="bio">
+      <p>I am interested in agents and value alignment. As AI agents become more integrated into everyday life, we need reliable ways to understand what values they hold and how they actually behave. On the value alignment side, I work on psychometric evaluation of LLMs: whether human questionnaires reliably measure model traits, how data contamination distorts those measurements, and how to build better evaluation instruments. On the agent side, I study how to make smaller models more capable tool users and how agents cope with realistic, uncooperative users.</p>
+      <p>I'm always happy to talk about shared interests. Feel free to reach out at <a href="mailto:opusdeisong@snu.ac.kr">opusdeisong@snu.ac.kr</a>.</p>
+    </div>
+  </section>
+
+  <!-- Selected Publications -->
+  <section>
+    <h2>Publications</h2>
+    <p class="section-desc">Full list on the <a href="publications.html">Publications</a> page.</p>
+
+    <div class="pub">
+      <a href="https://arxiv.org/abs/2510.07248" target="_blank" class="pub-title">Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models</a>
+      <p class="pub-meta">[ACL 2026 Main]</p>
+      <p class="pub-authors">Jonggeun Lee*, <strong>Woojung Song*</strong>, Jongwook Han*, Haesung Pyun, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
+      <p class="pub-summary">Proposes PA-Tool, a training-free method that renames tool schema components to align with small language models' pretraining familiarity, achieving up to 17% improvement on tool-use benchmarks without model retraining.</p>
+    </div>
+
+    <div class="pub">
+      <a href="https://arxiv.org/abs/2509.10078" target="_blank" class="pub-title">Human Psychometric Questionnaires Mischaracterize LLM Psychology: Evidence from Generation Behavior</a>
+      <p class="pub-meta">(Under Review), 2026</p>
+      <p class="pub-authors"><strong>Woojung Song*</strong>, Dongmin Choi*, Yoonah Park, Jongwook Han, Eun-Ju Lee, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
+      <p class="pub-summary">Shows that LLM psychological profiles from standard questionnaires diverge from profiles derived from actual generation behavior on real user queries.</p>
+    </div>
+
+    <div class="pub">
+      <a href="https://openreview.net/forum?id=UAUimofy3W" target="_blank" class="pub-title">Non-Collaborative User Simulators for Tool Agents</a>
+      <p class="pub-meta">[ICLR 2026]</p>
+      <p class="pub-authors">Jeonghoon Shim, <strong>Woojung Song</strong>, Cheyon Jin, Seungwon Kook, Yohan Jo</p>
+      <p class="pub-summary">Introduces a user simulator that reproduces realistic non-collaborative behaviors, revealing that state-of-the-art tool agents suffer significant performance drops under such conditions.</p>
+    </div>
+
+    <div class="pub">
+      <a href="https://arxiv.org/abs/2507.05890" target="_blank" class="pub-title">Psychometric Item Validation Using Virtual Respondents with Trait-Response Mediators</a>
+      <p class="pub-meta">Transactions of the Association for Computational Linguistics (TACL), 2026</p>
+      <p class="pub-authors">Sungjib Lim, <strong>Woojung Song</strong>, Eunju Lee, Yohan Jo</p>
+      <p class="pub-summary">Uses LLMs as virtual respondents for validating psychometric survey items by modeling trait-response mediators, demonstrating cost-effective item validation across Big Five, Schwartz values, and VIA frameworks.</p>
+    </div>
+
+    <div class="pub">
+      <a href="https://arxiv.org/abs/2510.07175" target="_blank" class="pub-title">Quantifying Data Contamination in Psychometric Evaluations of LLMs</a>
+      <p class="pub-meta">[EACL Findings 2026]</p>
+      <p class="pub-authors">Jongwook Han*, <strong>Woojung Song*</strong>, Jonggeun Lee*, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
+      <p class="pub-summary">A systematic framework to measure data contamination across item memorization, evaluation memorization, and target score matching in psychometric LLM benchmarks.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Woojung Song</p>
+</footer>
+
+</body>
+</html>
