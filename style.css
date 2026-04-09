@@ -1,0 +1,347 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --text: #1e293b;
+  --muted: #64748b;
+  --accent: #4f6df5;
+  --accent-hover: #3b5de7;
+  --accent-light: #eef1fe;
+  --border: #e2e8f0;
+  --gold: #e8a317;
+  --silver: #8993a4;
+  --bronze: #cd7c2a;
+  --radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131620;
+    --surface: #1c2030;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #818cf8;
+    --accent-hover: #a5b4fc;
+    --accent-light: #1e2340;
+    --border: #2d3348;
+    --gold: #fbbf24;
+    --silver: #94a3b8;
+    --bronze: #f59e0b;
+  }
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Navbar ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background: rgba(19, 22, 32, 0.85);
+  }
+}
+
+.nav-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+
+/* ── Layout ── */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+/* ── Hero ── */
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.muted { color: var(--muted); }
+
+.links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.links a:hover { color: var(--accent-hover); }
+
+/* ── Sections ── */
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+/* ── Publications ── */
+.pub {
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.15s;
+}
+
+.pub:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  .pub:hover {
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.04);
+  }
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent);
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+a.pub-title:hover { text-decoration: underline; }
+
+span.pub-title {
+  color: var(--text);
+}
+
+.pub-meta {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+  color: var(--text);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  vertical-align: middle;
+}
+
+.pub-summary {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
+/* ── Page Header ── */
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ── Section Description ── */
+.section-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: -0.6rem;
+  margin-bottom: 1rem;
+}
+
+.section-desc a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.section-desc a:hover { text-decoration: underline; }
+
+/* ── Bio ── */
+.bio {
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.bio p {
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.bio a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bio a:hover { text-decoration: underline; }
+
+/* ── Awards ── */
+.awards {
+  list-style: none;
+}
+
+.awards li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+.awards li:last-child { border-bottom: none; }
+
+.award-place {
+  display: inline-block;
+  width: 2.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.15rem 0;
+  border-radius: 4px;
+  margin-right: 0.6rem;
+  color: #fff;
+}
+
+.award-place.gold { background: var(--gold); }
+.award-place.silver { background: var(--silver); }
+.award-place.bronze { background: var(--bronze); }
+
+/* ── Experience ── */
+.exp {
+  margin-bottom: 1rem;
+  padding: 0.8rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp-date {
+  font-size: 0.82rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.exp p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.inline-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.inline-link:hover { text-decoration: underline; }
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.7rem; }
+  .container { padding: 2rem 1rem 1.5rem; }
+  .exp-header { flex-direction: column; gap: 0.2rem; }
+}
