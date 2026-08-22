@@ -1,0 +1,220 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.75in}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% Formatting
+\setlist{noitemsep}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+
+\begin{document}
+
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\Large Woojung Song}\\[2pt]
+Seoul, South Korea | \hypersetup{hidelinks}\href{mailto:opusdeisong@snu.ac.kr}{opusdeisong@snu.ac.kr} | (+82)10-9176-0274 | \hypersetup{}\href{https://opusdeisong.github.io}{Homepage} | \href{https://github.com/opusdeisong}{Github}
+\end{center}
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Seoul National University}, Seoul, South Korea \hfill Sep 2025 - Present \\
+Integrated Master's-Doctoral Program, Graduate School of Data Science \hfill 
+
+\noindent
+\textbf{Hanyang University}, Seoul, South Korea \hfill Mar 2022 - Aug 2025\\
+B.I.S. Department of Information System \hfill Overall GPA: 4.35 | Major GPA 4.35
+
+% Scholarships Section
+\section*{SCHOLARSHIPS}
+\noindent
+\textbf{Presidential Science Scholarship for Graduate Students} \hfill South Korea\\
+\textit{Ministry of Science and ICT} \hfill 2026 - 2027
+\begin{itemize}
+    \item Selected at a 25:1 competition ratio
+\end{itemize}
+
+% Papers Section
+\section*{PAPERS}
+
+\noindent
+\textbf{ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?} \\
+\textit{Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Main} \hfill 2026 \\
+\textbf{Woojung Song}\textsuperscript{*}, Nalim Kim\textsuperscript{*}, Sangjun Song, Chaewon Heo, Jongwon Lim, Yohan Jo \\
+{\footnotesize \textsuperscript{*}Co-first authors} \normalsize \\
+
+\noindent
+\textbf{Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models} \\
+\textit{Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL), Main} \hfill 2026 \\
+Jonggeun Lee\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jongwook Han, Haesung Pyun, Yohan Jo \\
+{\footnotesize \textsuperscript{*}Co-first authors} \normalsize \\
+
+\noindent
+\textbf{Human Psychometric Questionnaires Mischaracterize LLM Behavior} \\
+\textit{Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Main} \hfill 2026 \\
+\textbf{Woojung Song}\textsuperscript{*}, Dongmin Choi\textsuperscript{*}, Yoonah Park, Jongwook Han, Eun-Ju Lee, Yohan Jo \\
+{\footnotesize \textsuperscript{*}Co-first authors} \normalsize \\
+
+\noindent
+\textbf{Non-Collaborative User Simulators for Tool Agents} \\
+\textit{The Fourteenth International Conference on Learning Representations (ICLR)} \hfill 2026 \\
+Jeonghoon Shim, \textbf{Woojung Song}, Cheyon Jin, Seungwon Kook, Yohan Jo \\
+
+\noindent
+\textbf{Psychometric Item Validation Using Virtual Respondents with Trait-Response Mediators} \\
+\textit{Transactions of the Association for Computational Linguistics (TACL)} \hfill 2026 \\
+Sungjib Lim, \textbf{Woojung Song}, Eun-Ju Lee, Yohan Jo \\
+
+\noindent
+\textbf{Quantifying Data Contamination in Psychometric Evaluations of LLMs} \\
+\textit{Findings of the Association for Computational Linguistics: EACL} \hfill 2026 \\
+Jongwook Han\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jonggeun Lee\textsuperscript{*}, Yohan Jo \\
+{\footnotesize \textsuperscript{*}Co-first authors} \normalsize \\
+
+\noindent
+\textbf{Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically Valid Items} \\
+\textit{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL), Main} \hfill 2025 \\
+Jongwook Han\textsuperscript{*}, Dongmin Choi\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Eun-Ju Lee, Yohan Jo \\
+{\footnotesize \textsuperscript{*}Co-first authors} \normalsize \\
+
+\noindent
+\textbf{Interpretable Prediction of Private Brand Purchases by Pet Type in E-Commerce for Consumer Behavior Analysis Using Real-World Transaction Data} \\
+\textit{PeerJ Computer Science} \hfill 2026 \\
+Jaehyuk Lee\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jina Kim, Yoona Chung, Eunchan Kim \\
+{\footnotesize \textsuperscript{*}Co-first authors} \normalsize \\
+
+% Research Experience Section
+\section*{RESEARCH EXPERIENCE}
+\noindent
+\textbf{Seoul National University}, HOLI Lab \hfill Seoul, South Korea\\
+\textit{Undergraduate Research Assistant} \hfill Jul 2024 - Present
+\begin{itemize}
+    \item Researching value alignment in Large Language Models (LLMs)
+    \item Developing simulation frameworks using LLMs to model complex human behaviors and interactions
+\end{itemize}
+
+% Work Experience Section
+\section*{WORK EXPERIENCE}
+\noindent
+\textbf{LG Electronics}, H\&A Sound/Image Intelligence R\&D Lab \hfill Seoul, South Korea\\
+\textit{Intern} \hfill Mar 2024 - Jun 2024
+\begin{itemize}
+    \item Enhanced LLM-based Web Question Answering using RAG and multi-agent approaches
+    \item Developed WAAG, an automated QA evaluation system with 40\% accuracy improvement
+    \item Achieved highest level in LG SW Competency Certification Test
+\end{itemize}
+
+\noindent
+\textbf{CNC Study}, DataLingo Team \hfill Seoul, South Korea\\
+\textit{Project Manager} \hfill Jul 2022 - Present
+\begin{itemize}
+    \item Develop English questions and performance analysis for middle school students
+    \item Implement Chain-of-Thought prompting and multi-agent LLM systems for question generation
+\end{itemize}
+
+\noindent
+\textbf{US 8th Army}, Korean Augmentation To the United States Army \hfill Pyeongtaek, South Korea\\
+\textit{Sergeant (Senior KATUSA)} \hfill May 2020 - Nov 2021
+\begin{itemize}
+    \item Served in US 8th Army as part of the mandatory military service program
+    \item Received Certificate of Appreciation for exceptional service
+\end{itemize}
+
+% Patents Section
+\section*{PATENTS}
+\noindent
+\textbf{English problem creation system using multi-agents} \hfill App. No: 10-2024-0109541\\
+\textit{Filed:} August 16, 2024
+\begin{itemize}
+    \item AI system for automated creation of English exam questions
+    \item Aims to generate high-quality content and reduce educator workload
+\end{itemize}
+
+% Awards Section
+\section*{AWARDS}
+\noindent
+\textbf{2nd Place (Busan Mayor's Award)} \hfill Busan, South Korea\\
+\textit{DIVE Competition} \hfill 2026
+\begin{itemize}
+    \item Also won 1st Place from Busan Metropolitan Corporation in the 2026 DIVE competition
+\end{itemize}
+
+\noindent
+\textbf{3rd Place (Encouragement Award)} \hfill South Korea\\
+\textit{Korea Meteorological Administration Weather Data Contest} \hfill 2025
+
+\noindent
+\textbf{3rd Place (Chuncheon Mayor's Award)} \hfill Chuncheon, South Korea\\
+\textit{Chuncheon Generative AI Competition} \hfill Jun 2025
+\begin{itemize}
+    \item Developed "Blue-Ming" Chuncheon City Youth Entrepreneurship AI Consulting Platform
+\end{itemize}
+
+\noindent
+\textbf{3rd Place, App and Service Development} \hfill Busan, South Korea\\
+\textit{Busan Metropolitan City Mayor} \hfill 2024
+\begin{itemize}
+    \item Developed "Korail Donghae" application integrating Language Models with custom tools and RAG
+    \item Also won 1st place from Korea Railroad Corporation Busan-Gyeongnam Headquarters in DIVE competition
+\end{itemize}
+\noindent
+\textbf{2nd Place, IC-PBL Contest} \hfill Seoul, South Korea\\
+\textit{LG Electronics} \hfill Dec 2023
+\begin{itemize}
+    \item Created "LG COVER" smart home hub project integrating Matter and non-Matter devices
+\end{itemize}
+\noindent
+\textbf{1st Place, GDSC x Alphaco Hackathon} \hfill Seoul, South Korea\\
+\textit{Google Developer Student Clubs} \hfill Dec 2023
+\begin{itemize}
+    \item Developed "Nallang Mallang" mobile app for dementia and depression prevention
+\end{itemize}
+\noindent
+\textbf{Certificate of Appreciation} \hfill South Korea\\
+\textit{US 8th Army Korean Augmentation To the United States Army} \hfill Nov 2021
+\begin{itemize}
+    \item Recognized for exceptional service and contributions to the KATUSA program
+\end{itemize}
+
+% Domestic Paper Section
+\section*{DOMESTIC PAPERS}
+
+\noindent
+\textbf{Enhancing the Security of AI Models through Parameter Encryption} \\
+\textit{KCC 2025} \hfill 2025 \\
+Dongwook Kim, \textbf{Woojung Song} \\
+
+\noindent
+\textbf{B. F. Sword: Blank Inference System with Optimized RAG and Knowledge Distillation} \\
+\textit{Proceedings of HCI Korea 2025} \hfill 2025 \\
+Junseong Pyo, Hyejin Bae, Kitae Kwon, Jina Kim, \textbf{Woojung Song}, Yeonseong Shin
+
+% Skills Section
+\section*{SKILLS \& COMPETENCIES}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C/C++
+    \item \textbf{Relevant Coursework:} Data Structures, Databases, Computer Architecture, OS, Algorithms, Networks, Software Engineering, Machine Learning, Prompt Engineering, Deep Learning, Information Security	
+    \item \textbf{Language:} Korean (native), English (fluent)
+\end{itemize}
+
+% Extra-curricular Activities
+\section*{EXTRA-CURRICULAR ACTIVITIES}
+\noindent
+\textbf{FORIF (Hanyang Programming Club)} \hfill Seoul, South Korea\\
+\textit{Member (2022 - 2025), Vice President (2023)}  
+\begin{itemize}
+    \item Organized club events, including HPEC, doubling club membership
+    \item Managed HPEC \& HSPC algorithm competition as Project Manager
+\end{itemize}
+
+
+\end{document}
