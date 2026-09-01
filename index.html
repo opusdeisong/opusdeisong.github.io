@@ -93,7 +93,7 @@
           <a href="https://arxiv.org/abs/2606.05553" target="_blank" class="pub-title">ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?</a>
           <p class="pub-meta">EMNLP 2026 (Main)</p>
           <p class="pub-authors"><strong>Woojung Song*</strong>, Nalim Kim*, Sangjun Song, Chaewon Heo, Jongwon Lim, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
-          <p class="pub-summary">An automatically constructed benchmark that tests whether role-playing agents shift their behavior in step with a character's evolving psychology across the narrative, where conditioning on the Character Arc beats every other context strategy—most of all on scenarios beyond the source text.</p>
+          <p class="pub-summary">A benchmark of 17 novels and 80 characters testing whether role-playing agents track a character's evolving psychology rather than a fixed persona. Conditioning on a Character Arc—the narrative segmented into psychological phases—beats every other context strategy on all six models, most of all on scenarios beyond the source text.</p>
         </div>
         <img src="images/fig-arcane.png" alt="ArcANE construction pipeline" class="pub-figure">
       </div>
@@ -104,7 +104,8 @@
           <a href="https://arxiv.org/abs/2509.10078" target="_blank" class="pub-title">Human Psychometric Questionnaires Mischaracterize LLM Behavior</a>
           <p class="pub-meta">EMNLP 2026 (Main)</p>
           <p class="pub-authors"><strong>Woojung Song*</strong>, Dongmin Choi*, Yoonah Park, Jongwook Han, Eun-Ju Lee, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
-          <p class="pub-summary">Reveals a gap between LLM psychological profiles measured by standard questionnaires and those observed in actual generation behavior, questioning the validity of questionnaire-based assessments.</p>
+          <p class="pub-summary">LLM profiles from Likert questionnaires (PVQ, BFI) diverge substantially from those observed in generation behavior on realistic user queries: lexical cues in questionnaire items invite socially desirable responses, and persona-induced shifts on questionnaires vanish in actual generation—arguing for generation-based profiling instead.</p>
+          <p class="pub-links"><a href="https://github.com/holi-lab/Human-Psychometric-Questionnaires-Mischaracterize-LLM-Behavior" target="_blank" class="pub-link">Code</a></p>
         </div>
         <img src="images/fig-mischaracterize.png" alt="Questionnaire vs generation behavior" class="pub-figure">
       </div>
@@ -115,7 +116,8 @@
           <a href="https://arxiv.org/abs/2510.07248" target="_blank" class="pub-title">Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models</a>
           <p class="pub-meta">ACL 2026 (Main)</p>
           <p class="pub-authors">Jonggeun Lee*, <strong>Woojung Song*</strong>, Jongwook Han, Haesung Pyun, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
-          <p class="pub-summary">PA-Tool renames tool schema components to match small language models' pretraining vocabulary, improving tool-use accuracy by up to 17% without any model retraining.</p>
+          <p class="pub-summary">Small models hallucinate tool names shaped by pretraining conventions instead of the given schema. PA-Tool renames schema components toward pretraining-familiar patterns, cutting schema-misalignment errors by 80% and improving tool-use accuracy by up to 17%—without any retraining.</p>
+          <p class="pub-links"><a href="https://github.com/holi-lab/PA-Tool" target="_blank" class="pub-link">Code</a></p>
         </div>
         <img src="images/fig-patool.png" alt="PA-Tool overview" class="pub-figure">
       </div>
@@ -126,7 +128,8 @@
           <a href="https://openreview.net/forum?id=UAUimofy3W" target="_blank" class="pub-title">Non-Collaborative User Simulators for Tool Agents</a>
           <p class="pub-meta">ICLR 2026</p>
           <p class="pub-authors">Jeonghoon Shim, <strong>Woojung Song</strong>, Cheyon Jin, Seungwon Kook, Yohan Jo</p>
-          <p class="pub-summary">A user simulator that generates realistic non-cooperative behaviors, exposing significant performance drops in state-of-the-art tool agents under adversarial conditions.</p>
+          <p class="pub-summary">A user simulator producing four categories of realistic non-collaborative behaviors—unavailable requests, digressions, impatience, and incomplete utterances—that exposes sharp performance drops, escalated hallucinations, and dialogue breakdowns in state-of-the-art tool agents on MultiWOZ and τ-bench.</p>
+          <p class="pub-links"><a href="https://github.com/holi-lab/NCUser" target="_blank" class="pub-link">Code</a></p>
         </div>
         <img src="images/fig-noncollaborative.png" alt="Non-collaborative user simulator" class="pub-figure">
       </div>
@@ -137,7 +140,8 @@
           <a href="https://aclanthology.org/2025.acl-long.838/" target="_blank" class="pub-title">Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically Valid Items</a>
           <p class="pub-meta">ACL 2025 (Main)</p>
           <p class="pub-authors">Jongwook Han*, Dongmin Choi*, <strong>Woojung Song*</strong>, Eun-Ju Lee, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
-          <p class="pub-summary">An evaluation framework grounded in real user-LLM interactions, finding that 44 LLMs consistently prioritize Benevolence and Self-Direction while undervaluing Tradition and Power.</p>
+          <p class="pub-summary">A value benchmark built from real user-LLM interactions, psychometrically validated against human raters' own value scores. Across 44 LLMs, models consistently prioritize Benevolence, Security, and Self-Direction over Tradition, Power, and Achievement.</p>
+          <p class="pub-links"><a href="https://github.com/holi-lab/ValuePortrait" target="_blank" class="pub-link">Code</a></p>
         </div>
         <img src="images/fig-valueportrait.png" alt="Value Portrait framework" class="pub-figure">
       </div>

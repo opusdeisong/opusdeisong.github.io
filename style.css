@@ -414,6 +414,30 @@ a.pub-title:hover { text-decoration: underline; }
   line-height: 1.55;
 }
 
+.pub-links {
+  margin-top: 0.45rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.pub-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
 /* ── Publication Figure ── */
 .pub-figure {
   width: 100%;
