@@ -141,35 +141,67 @@ h1, h2, h3, .pub-title, .sidebar-name {
   }
 
   .sidebar-news-title {
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--text);
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.7rem;
   }
 
   .sidebar-news ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
+    position: relative;
+  }
+
+  .sidebar-news ul::before {
+    content: "";
+    position: absolute;
+    left: 0.27rem;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    width: 2px;
+    background: var(--border);
   }
 
   .sidebar-news li {
-    font-size: 0.72rem;
-    line-height: 1.45;
-    color: var(--muted);
+    position: relative;
+    padding-left: 1.15rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--text);
+  }
+
+  .sidebar-news li:last-child {
+    padding-bottom: 0;
+  }
+
+  .sidebar-news li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.28rem;
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--accent);
+  }
+
+  .sidebar-news li:first-child::before {
+    background: var(--accent);
   }
 
   .news-date {
     display: block;
-    font-size: 0.66rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     color: var(--accent);
+    margin-bottom: 0.1rem;
   }
 
   .sidebar-links {
