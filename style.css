@@ -425,6 +425,16 @@ h2 {
   line-height: 1.55;
 }
 
+.news-detail a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-detail a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .news-more {
   margin-top: 1.4rem;
 }
