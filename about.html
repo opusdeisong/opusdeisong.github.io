@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>try{if(localStorage.getItem('sidebarCollapsed')==='1')document.body.classList.add('sidebar-collapsed');}catch(e){}</script>
 
 <!-- Desktop Sidebar -->
 <aside class="sidebar">
@@ -39,6 +40,7 @@
     <a href="Woojung_Song_CV.pdf" download>CV (PDF)</a>
   </div>
 </aside>
+<button class="sidebar-toggle" aria-label="Toggle sidebar" onclick="document.body.classList.toggle('sidebar-collapsed');try{localStorage.setItem('sidebarCollapsed',document.body.classList.contains('sidebar-collapsed')?'1':'0');}catch(e){}">&lsaquo;</button>
 
 <!-- Mobile / Tablet Navbar -->
 <nav class="navbar">
