@@ -51,11 +51,12 @@ h1, h2, h3, .pub-title, .sidebar-name {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 1.3rem;
-    left: calc(var(--sidebar-w) - 1.1rem);
-    width: 2.2rem;
-    height: 2.2rem;
-    padding: 0 0 0.12rem;
+    top: 50%;
+    left: calc(var(--sidebar-w) - 0.9rem);
+    transform: translateY(-50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0 0 0.1rem;
     border: 1px solid var(--border);
     border-radius: 50%;
     background: var(--bg);
@@ -86,8 +87,8 @@ h1, h2, h3, .pub-title, .sidebar-name {
   }
 
   body.sidebar-collapsed .sidebar-toggle {
-    left: 1rem;
-    transform: rotate(180deg);
+    left: 0.7rem;
+    transform: translateY(-50%) rotate(180deg);
   }
 }
 
@@ -104,17 +105,14 @@ h1, h2, h3, .pub-title, .sidebar-name {
     padding: 2.5rem 2rem 2rem;
     background: var(--bg);
     border-right: 1px solid var(--border);
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .sidebar::-webkit-scrollbar {
-    display: none;
+    overflow: hidden;
   }
 
   .sidebar-photo {
     width: 100%;
+    flex: 0 1 auto;
+    min-height: 0;
+    max-height: 34vh;
     aspect-ratio: 3 / 4;
     border-radius: 4px;
     object-fit: cover;
