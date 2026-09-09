@@ -105,6 +105,12 @@ h1, h2, h3, .pub-title, .sidebar-name {
     background: var(--bg);
     border-right: 1px solid var(--border);
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
   }
 
   .sidebar-photo {
