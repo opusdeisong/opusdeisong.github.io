@@ -632,6 +632,15 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.page-links {
+  justify-content: flex-start;
+  gap: 1.2rem;
+}
+
+@media (min-width: 961px) {
+  .page-links { display: none; }
+}
+
 .page-header h1 {
   font-size: 1.6rem;
   font-weight: 700;
