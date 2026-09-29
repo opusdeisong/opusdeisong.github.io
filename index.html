@@ -155,9 +155,23 @@
       <div class="pub has-figure">
         <div class="pub-body">
           <p class="pub-venue"><span class="venue-badge">Under Review</span></p>
-          <span class="pub-title">Agents Trust Tools Too Much: Measuring Reliance on Unreliable Tools</span>
-          <p class="pub-authors">Hoyeol Yang*, <strong>Woojung Song*</strong>, Taewon Kim, Jonghyun Song, Seoyeon Park, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
-          <p class="pub-summary">Tool-using agents are usually evaluated as if their tools always return the truth. We corrupt what web search, sub-agent delegation, and code execution return, and find that fourteen LLMs adopt the corrupted content at high rates, up to 68% for web search. Reasoning traces show agents often notice the conflict and recover the right answer internally, yet still report only the corrupted one, and none of our prompting, metadata, or post-training interventions fixes this across the board.</p>
+          <span class="pub-title">AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</span>
+          <p class="pub-authors"><strong>Woojung Song*</strong>, Hoyeol Yang*, Jeonghoon Shim, Sungjib Lim, Jonggeun Lee, Yunho Choi, Yohan Jo &nbsp;<span class="badge">First</span></p>
+          <p class="pub-summary">Agents can complete the same task while behaving very differently. AgentHabit profiles these differences along 23 behavioral axes across 86 everyday tasks, including when agents ask questions, use tools, and explain their decisions. Across 18 models, these profiles remain recognizable on different task sets, while prompting and fine-tuning change some tendencies more easily than others.</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2609.32795" target="_blank" class="pub-link">Paper</a>
+            <span class="pub-tag-group"><span class="tag tag-agents">Agents</span></span>
+          </p>
+        </div>
+        <img src="images/fig-agenthabit.png" alt="AgentHabit compares two agents' interactions and behavioral profiles on the same everyday task" class="pub-figure">
+      </div>
+
+      <div class="pub has-figure">
+        <div class="pub-body">
+          <p class="pub-venue"><span class="venue-badge">Under Review</span></p>
+          <span class="pub-title">Agents' Overreliance on Unreliable Tools</span>
+          <p class="pub-authors">Hoyeol Yang*, <strong>Woojung Song*</strong>, Taewon Kim, Jonghyun Song, Seoyeon Park, Yohan Jo &nbsp;<span class="badge">First</span></p>
+          <p class="pub-summary">Across 14 models, agents frequently adopt incorrect outputs from web search, an LLM sub-agent, and a code executor, sometimes overriding answers they already know. Even when their reasoning notices a conflict, they often pass the incorrect content to users without warning. Prompts that ask agents to verify tool outputs reduce this reliance across all three tools while largely preserving accuracy when the outputs are correct.</p>
           <p class="pub-links">
             <a href="https://arxiv.org/abs/2609.05587" target="_blank" class="pub-link">Paper</a>
             <span class="pub-tag-group"><span class="tag tag-agents">Agents</span></span>
@@ -170,7 +184,7 @@
         <div class="pub-body">
           <p class="pub-venue"><span class="venue-badge">EMNLP 2026</span><span class="venue-note">Main</span></p>
           <span class="pub-title">ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?</span>
-          <p class="pub-authors"><strong>Woojung Song*</strong>, Nalim Kim*, Sangjun Song, Chaewon Heo, Jongwon Lim, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
+          <p class="pub-authors"><strong>Woojung Song*</strong>, Nalim Kim*, Sangjun Song, Chaewon Heo, Jongwon Lim, Yohan Jo &nbsp;<span class="badge">First</span></p>
           <p class="pub-summary">Role-playing agents should evolve with their character, not hold a fixed persona. ArcANE, an automatically built benchmark of 17 novels and 80 characters, shows that conditioning on a Character Arc, the narrative segmented into psychological phases, outperforms every other context strategy, most of all on scenarios the source text never explores.</p>
           <p class="pub-links">
             <a href="https://holi-lab.github.io/ArcANE/" target="_blank" class="pub-link">Project</a>
@@ -185,7 +199,7 @@
         <div class="pub-body">
           <p class="pub-venue"><span class="venue-badge">EMNLP 2026</span><span class="venue-note">Main</span></p>
           <span class="pub-title">Human Psychometric Questionnaires Mischaracterize LLM Behavior</span>
-          <p class="pub-authors"><strong>Woojung Song*</strong>, Dongmin Choi*, Yoonah Park, Jongwook Han, Eun-Ju Lee, Yohan Jo &nbsp;<span class="badge">Co-first</span></p>
+          <p class="pub-authors"><strong>Woojung Song*</strong>, Dongmin Choi*, Yoonah Park, Jongwook Han, Eun-Ju Lee, Yohan Jo &nbsp;<span class="badge">First</span></p>
           <p class="pub-summary">The psychological profile an LLM reports on a questionnaire is not the one it shows when actually generating text. Familiar questionnaire items cue socially desirable answers, and persona effects that appear on questionnaires vanish on realistic user queries. We argue models should be profiled by what they generate, not what they self-report.</p>
           <p class="pub-links">
             <a href="https://holi-lab.github.io/Human-Psychometric-Questionnaires-Mischaracterize-LLM-Behavior/" target="_blank" class="pub-link">Project</a>
