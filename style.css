@@ -735,14 +735,118 @@ h2 {
 
 .bio a:hover { text-decoration: underline; }
 
-.bio ol {
-  margin: 0.5rem 0 0.7rem 1.2rem;
-  font-size: 0.9rem;
-  line-height: 1.8;
+.research-directions {
+  list-style: none;
+  display: grid;
+  gap: 1.35rem;
+  margin: 1.2rem 0;
+  padding: 0;
 }
 
-.bio ol li {
-  margin-bottom: 0.35rem;
+.research-direction {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.research-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 1.4rem;
+  height: 1.4rem;
+  margin-top: 0.1rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.research-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-heading {
+  margin-bottom: 0.55rem;
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.research-label {
+  color: var(--accent);
+}
+
+.research-topics {
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+  padding: 0;
+}
+
+.research-topic {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.research-topic-label {
+  color: var(--muted);
+}
+
+.bio .research-paper {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.bio .research-paper:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  text-decoration: none;
+}
+
+.research-paper:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.bio .research-question {
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 0.85rem;
+}
+
+.research-question span {
+  color: var(--muted);
+}
+
+.research-question strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .research-direction { gap: 0.6rem; }
+  .research-topic-label { flex-basis: 100%; }
 }
 
 /* ── Awards ── */
