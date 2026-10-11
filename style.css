@@ -51,7 +51,7 @@ strong { font-weight: 600; }
 .site-name {
   display: inline-block;
   color: var(--text);
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1.25;
@@ -290,7 +290,7 @@ section[aria-labelledby="research-heading"] { margin-bottom: 1.2rem; }
 @media (max-width: 600px) {
   .container { width: calc(100% - 2.25rem); padding-top: 1.8rem; padding-bottom: 2rem; }
   .site-header { margin-bottom: 1.6rem; }
-  .site-name { font-size: 1.85rem; }
+  .site-name { font-size: 2rem; }
   .site-nav { gap: 0.4rem 1.2rem; margin-top: 0.65rem; }
   .profile { margin-bottom: 2rem; }
   .research-topic-label { flex-basis: 100%; }
