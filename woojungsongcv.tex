@@ -3,15 +3,26 @@
 
 % Packages
 \usepackage{geometry}
-\geometry{a4paper, margin=0.75in}
+\geometry{a4paper, margin=0.7in}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{fontspec}
+\setmainfont{texgyreheros}[
+    Extension = .otf,
+    UprightFont = *-regular,
+    BoldFont = *-bold,
+    ItalicFont = *-italic,
+    BoldItalicFont = *-bolditalic
+]
+\usepackage{needspace}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
 
 % Formatting
 \definecolor{linkblue}{HTML}{245B92}
+\definecolor{muted}{HTML}{55555D}
 \hypersetup{
     colorlinks=true,
     urlcolor=linkblue,
@@ -23,20 +34,24 @@
 \setlength{\parindent}{0pt}
 \setlist{noitemsep, topsep=2pt, leftmargin=1.3em}
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titlespacing*{\section}{0pt}{9pt}{4pt}
 
-\newcommand{\first}{\enspace\textperiodcentered\enspace\textbf{First}}
-% Keep each publication's venue, title, and authors on the same page.
+\newcommand{\first}{\enspace\textperiodcentered\enspace\textbf{\textcolor{black}{First}}}
+% Keep the linked title, full author list, and venue together as one readable entry.
 \newcommand{\publication}[4]{%
-    \par\addvspace{6pt}\noindent
+    \par\addvspace{11pt}\noindent
     \begin{minipage}{\linewidth}
-        {\small #3\hfill\href{#2}{[Paper]}}\par
-        \textbf{#1}\par
-        {\small #4}\par
+        \raggedright
+        {\fontsize{10.5}{13}\selectfont\bfseries\href{#2}{#1}\par}
+        \vspace{2pt}
+        {\fontsize{9.5}{12}\selectfont #4\par}
+        \vspace{1.5pt}
+        {\fontsize{9}{11}\selectfont\color{muted} #3\par}
     \end{minipage}\par
 }
 
 \begin{document}
+\raggedright
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -52,7 +67,7 @@
 \end{center}
 
 % Education Section
-\section*{EDUCATION}
+\section*{Education}
 \noindent
 \textbf{Seoul National University}, Seoul, South Korea \hfill Sep 2025 -- Present \\
 Integrated M.S.--Ph.D., Graduate School of Data Science\\
@@ -64,7 +79,7 @@ Advisor: \href{https://yohanjo.github.io/}{Yohan Jo}, HOLI Lab (Human-Oriented L
 B.I.S. Department of Information Systems \hfill Overall GPA: 4.35/4.5 | Major GPA: 4.35/4.5
 
 % Research Interests Section
-\section*{RESEARCH INTERESTS}
+\section*{Research Interests}
 Understanding and shaping agent behavior to better align it with human needs and values.
 \begin{itemize}
     \item \textbf{Agent Behavior:} Behavioral evaluation, decision-making, tool use, user interaction, and value alignment.
@@ -72,9 +87,10 @@ Understanding and shaping agent behavior to better align it with human needs and
 \end{itemize}
 
 % Publications Section
-\section*{PUBLICATIONS}
+\section*{Publications}
 {\footnotesize \textsuperscript{*}Equal contribution. \textbf{First} denotes first authorship, including equal contribution.}\par
 
+\Needspace{7\baselineskip}
 \medskip\textbf{Preprints}\par
 
 \publication
@@ -95,7 +111,8 @@ Understanding and shaping agent behavior to better align it with human needs and
 {Under Review (2026)\first}
 {Hoyeol Yang\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Taewon Kim, Jonghyun Song, Seoyeon Park, Yohan Jo}
 
-\medskip\textbf{Conferences \& Journals}\par
+\Needspace{7\baselineskip}
+\par\addvspace{12pt}\textbf{Conferences \& Journals}\par
 
 \publication
 {ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?}
@@ -133,6 +150,9 @@ Understanding and shaping agent behavior to better align it with human needs and
 {EACL 2026 (Findings)\first}
 {Jongwook Han\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jonggeun Lee\textsuperscript{*}, Yohan Jo}
 
+\newpage
+\section*{Publications \textnormal{(continued)}}
+
 \publication
 {Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically Valid Items}
 {https://aclanthology.org/2025.acl-long.838/}
@@ -146,7 +166,7 @@ Understanding and shaping agent behavior to better align it with human needs and
 {Jaehyuk Lee\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jina Kim, Yoona Chung, Eunchan Kim}
 
 % Experience Section
-\section*{EXPERIENCE}
+\section*{Experience}
 \noindent
 \textbf{Seoul National University}, HOLI Lab \hfill Seoul, South Korea\\
 \textit{Undergraduate Research Intern} \hfill Jul 2024 -- Aug 2025
@@ -174,17 +194,14 @@ Understanding and shaping agent behavior to better align it with human needs and
 \end{itemize}
 
 % Patents Section
-\section*{PATENTS}
+\section*{Patents}
 \noindent
 \textbf{English Problem Creation System Using Multi-Agents} \hfill App. No: 10-2024-0109541\\
-\textit{Filed:} August 16, 2024
-\begin{itemize}
-    \item AI system for automated creation of English exam questions
-    \item Aims to generate high-quality content and reduce educator workload
-\end{itemize}
+\textit{Filed:} August 16, 2024\\
+AI system for generating high-quality English exam questions and reducing educator workload.
 
 % Scholarships Section
-\section*{SCHOLARSHIPS}
+\section*{Scholarships}
 \noindent
 \textbf{Presidential Science Scholarship for Graduate Students} \hfill South Korea\\
 \textit{Ministry of Science and ICT} \hfill 2026 -- 2027
@@ -193,7 +210,7 @@ Understanding and shaping agent behavior to better align it with human needs and
 \end{itemize}
 
 % Awards Section
-\section*{AWARDS}
+\section*{Awards}
 \noindent
 \textbf{Busan Mayor's Award} \hfill Busan, South Korea\\
 \textit{DIVE Competition, 2nd Place} \hfill 2026
@@ -217,14 +234,13 @@ Understanding and shaping agent behavior to better align it with human needs and
 \end{itemize}
 
 % Skills Section
-\section*{SKILLS \& COMPETENCIES}
-\begin{itemize}
-    \item \textbf{Programming:} Python, C/C++
-    \item \textbf{Language:} Korean (native), English (fluent)
-\end{itemize}
+\section*{Skills \& Competencies}
+\textbf{Programming:} Python, C/C++ \quad
+\textbf{Languages:} Korean (native), English (fluent)
 
 % Extra-curricular Activities
-\section*{EXTRA-CURRICULAR ACTIVITIES}
+\Needspace{6\baselineskip}
+\section*{Extra-curricular Activities}
 \noindent
 \textbf{FORIF (Hanyang Programming Club)} \hfill Seoul, South Korea\\
 \textit{Member (2022 -- 2025), Vice President (2023)}
