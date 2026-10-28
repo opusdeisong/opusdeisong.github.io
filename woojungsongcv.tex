@@ -1,5 +1,5 @@
 % Document class and font size
-\documentclass[a4paper,9pt]{extarticle}
+\documentclass[a4paper,10pt]{extarticle}
 
 % Packages
 \usepackage{geometry}
@@ -8,22 +8,23 @@
 \usepackage{enumitem}
 \usepackage{lmodern}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
 
 % Formatting
 \hypersetup{
     hidelinks,
     pdftitle={Woojung Song -- Curriculum Vitae},
     pdfauthor={Woojung Song},
-    pdfsubject={Agent behavior, alignment, and human-like agents}
+    pdfsubject={Agent behavior, tool reliability, and human simulation}
 }
 \setlength{\parindent}{0pt}
-\setlist{noitemsep}
+\setlist[itemize]{leftmargin=1.3em, topsep=4pt, itemsep=2pt, parsep=0pt}
 \titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+\titlespacing*{\section}{0pt}{12pt}{7pt}
 
-% Preserve the original CV's title, venue, and author order in a single block.
+% Keep each paper's title, venue, and author list together.
 \newcommand{\publication}[5]{%
-    \par\addvspace{8pt}\noindent
+    \par\addvspace{7pt}\noindent
     \begin{minipage}{\linewidth}
         \raggedright
         \textbf{\href{#2}{#1}}\par
@@ -33,7 +34,11 @@
 }
 
 \begin{document}
-\pagestyle{empty}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize Woojung Song}
+\fancyfoot[R]{\footnotesize \thepage}
 
 % Header
 \begin{center}
@@ -44,71 +49,53 @@ Seoul, South Korea | \href{mailto:opusdeisong@snu.ac.kr}{opusdeisong@snu.ac.kr}\
 
 % Research Interests Section
 \section*{RESEARCH INTERESTS}
-I study how LLM agents behave and how to make them more reliable and better aligned with human needs and values.
-My work spans behavioral evaluation, value measurement, tool use, and user interaction.
-I am also interested in social agents that model the values, personalities, and changing behavior of people and fictional characters.
+I study how to understand and shape LLM agent behavior to better align it with human needs and values.
+\begin{itemize}
+    \item \textbf{Agent behavior and reliability:} Behavioral evaluation, tool use and trust, and valid measurement of models' values and behavior.
+    \item \textbf{Human simulation:} Modeling users and fictional characters, including how their values, personalities, and behavior vary across situations and over time.
+\end{itemize}
 
 % Education Section
 \section*{EDUCATION}
 \noindent
 \textbf{Seoul National University}, Seoul, South Korea \hfill Sep 2025 -- Present \\
-Integrated M.S.--Ph.D., Graduate School of Data Science\\
+Integrated M.S.--Ph.D. in Data Science\\
 Advisor: \href{https://yohanjo.github.io/}{Yohan Jo}, HOLI Lab (Human-Oriented Language Intelligence)
 
 \medskip
 \noindent
 \textbf{Hanyang University}, Seoul, South Korea \hfill Mar 2022 -- Aug 2025\\
-B.I.S. Department of Information Systems \hfill Overall GPA: 4.35/4.5 | Major GPA: 4.35/4.5
+B.I.S. in Information Systems \hfill GPA: 4.35/4.50 (overall and major)
 
 % Publications Section
-\section*{PUBLICATIONS\hfill{\normalfont\footnotesize \textsuperscript{*} Equal contribution}}
-
-\publication
-{Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It}
-{https://arxiv.org/abs/2610.03195}
-{Under Review}
-{2026}
-{Jonghyun Song\textsuperscript{*}, Haewon Park\textsuperscript{*}, Jeonghoon Shim\textsuperscript{*}, \textbf{Woojung Song}, Yohan Jo}
-
-\publication
-{AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks}
-{https://arxiv.org/abs/2609.32795}
-{Under Review}
-{2026}
-{\textbf{Woojung Song}\textsuperscript{*}, Hoyeol Yang\textsuperscript{*}, Jeonghoon Shim, Sungjib Lim, Jonggeun Lee, Yunho Choi, Yohan Jo}
-
-\publication
-{Agents' Overreliance on Unreliable Tools}
-{https://arxiv.org/abs/2609.05587}
-{Under Review}
-{2026}
-{Hoyeol Yang\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Taewon Kim, Jonghyun Song, Seoyeon Park, Yohan Jo}
+\section*{PEER-REVIEWED PUBLICATIONS}
+{\footnotesize \textsuperscript{*} Equal contribution. Includes accepted papers.}
 
 \publication
 {ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?}
 {https://arxiv.org/abs/2606.05553}
-{Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), Main}
+{EMNLP, Main Conference (accepted)}
 {2026}
 {\textbf{Woojung Song}\textsuperscript{*}, Nalim Kim\textsuperscript{*}, Sangjun Song, Chaewon Heo, Jongwon Lim, Yohan Jo}
 
 \publication
 {Human Psychometric Questionnaires Mischaracterize LLM Behavior}
 {https://arxiv.org/abs/2509.10078}
-{Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP), Main}
+{EMNLP, Main Conference (accepted)}
 {2026}
 {\textbf{Woojung Song}\textsuperscript{*}, Dongmin Choi\textsuperscript{*}, Yoonah Park, Jongwook Han, Eun-Ju Lee, Yohan Jo}
 
 \publication
 {Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models}
 {https://arxiv.org/abs/2510.07248}
-{Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL), Main}
+{ACL, Main Conference}
 {2026}
 {Jonggeun Lee\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jongwook Han, Haesung Pyun, Yohan Jo}
 
 \publication
 {Non-Collaborative User Simulators for Tool Agents}
 {https://openreview.net/forum?id=UAUimofy3W}
-{The Fourteenth International Conference on Learning Representations (ICLR)}
+{International Conference on Learning Representations (ICLR)}
 {2026}
 {Jeonghoon Shim, \textbf{Woojung Song}, Cheyon Jin, Seungwon Kook, Yohan Jo}
 
@@ -122,16 +109,9 @@ B.I.S. Department of Information Systems \hfill Overall GPA: 4.35/4.5 | Major GP
 \publication
 {Quantifying Data Contamination in Psychometric Evaluations of LLMs}
 {https://arxiv.org/abs/2510.07175}
-{Findings of the Association for Computational Linguistics: EACL}
+{Findings of EACL}
 {2026}
 {Jongwook Han\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jonggeun Lee\textsuperscript{*}, Yohan Jo}
-
-\publication
-{Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically~Valid~Items}
-{https://aclanthology.org/2025.acl-long.838/}
-{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL), Main}
-{2025}
-{Jongwook Han\textsuperscript{*}, Dongmin Choi\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Eun-Ju Lee, Yohan Jo}
 
 \publication
 {Interpretable Prediction of Private Brand Purchases by Pet Type in E-Commerce for Consumer Behavior Analysis Using Real-World Transaction Data}
@@ -140,8 +120,40 @@ B.I.S. Department of Information Systems \hfill Overall GPA: 4.35/4.5 | Major GP
 {2026}
 {Jaehyuk Lee\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Jina Kim, Yoona Chung, Eunchan Kim}
 
-% Research Experience Section
+\publication
+{Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically Valid Items}
+{https://aclanthology.org/2025.acl-long.838/}
+{ACL, Main Conference}
+{2025}
+{Jongwook Han\textsuperscript{*}, Dongmin Choi\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Eun-Ju Lee, Yohan Jo}
+
+% Preprints are separate from accepted and published work.
 \newpage
+\section*{PREPRINTS}
+{\footnotesize \textsuperscript{*} Equal contribution. All papers below are under review.}
+
+\publication
+{AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks}
+{https://arxiv.org/abs/2609.32795}
+{arXiv:2609.32795}
+{2026}
+{\textbf{Woojung Song}\textsuperscript{*}, Hoyeol Yang\textsuperscript{*}, Jeonghoon Shim, Sungjib Lim, Jonggeun Lee, Yunho Choi, Yohan Jo}
+
+\publication
+{Agents' Overreliance on Unreliable Tools}
+{https://arxiv.org/abs/2609.05587}
+{arXiv:2609.05587}
+{2026}
+{Hoyeol Yang\textsuperscript{*}, \textbf{Woojung Song}\textsuperscript{*}, Taewon Kim, Jonghyun Song, Seoyeon Park, Yohan Jo}
+
+\publication
+{Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It}
+{https://arxiv.org/abs/2610.03195}
+{arXiv:2610.03195}
+{2026}
+{Jonghyun Song\textsuperscript{*}, Haewon Park\textsuperscript{*}, Jeonghoon Shim\textsuperscript{*}, \textbf{Woojung Song}, Yohan Jo}
+
+% Research Experience Section
 \section*{RESEARCH EXPERIENCE}
 \noindent
 \textbf{Seoul National University}, HOLI Lab \hfill Seoul, South Korea\\
@@ -151,20 +163,20 @@ B.I.S. Department of Information Systems \hfill Overall GPA: 4.35/4.5 | Major GP
 \section*{WORK EXPERIENCE}
 \noindent
 \textbf{LG Electronics}, H\&A Sound/Image Intelligence R\&D Lab \hfill Seoul, South Korea\\
-\textit{Intern} \hfill Mar 2024 -- Jun 2024
+\textit{AI Research Intern} \hfill Mar 2024 -- Jun 2024
 \begin{itemize}
-    \item Enhanced LLM-based Web Question Answering using RAG and multi-agent approaches
-    \item Developed WAAG, an automated QA evaluation system with 40\% accuracy improvement
-    \item Achieved highest level in LG SW Competency Certification Test
+    \item Improved LLM-based web question answering using retrieval-augmented generation and multi-agent approaches.
+    \item Developed WAAG, an automated QA evaluation system with a 40\% improvement in accuracy.
+    \item Achieved the highest level in the LG Software Competency Certification Test.
 \end{itemize}
 
 
 \noindent
-\textbf{US 8th Army}, Korean Augmentation To the United States Army \hfill Pyeongtaek, South Korea\\
+\textbf{Republic of Korea Army}, KATUSA, U.S. Eighth Army \hfill Pyeongtaek, South Korea\\
 \textit{Sergeant (Senior KATUSA)} \hfill May 2020 -- Nov 2021
 \begin{itemize}
-    \item Served in US 8th Army as part of the mandatory military service program
-    \item Received Certificate of Appreciation for exceptional service
+    \item Completed mandatory military service as a Korean Augmentation to the United States Army (KATUSA) soldier.
+    \item Received a Certificate of Appreciation for exceptional service.
 \end{itemize}
 
 % Scholarships Section
