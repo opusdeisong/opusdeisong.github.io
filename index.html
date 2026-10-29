@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Woojung Song</title>
-  <meta name="description" content="Woojung Song – researcher at Seoul National University studying agent reliability, tool use, and how values and personas translate into behavior.">
+  <meta name="description" content="Woojung Song – researcher at Seoul National University studying how to measure, understand, and guide the behavior of language models and agents.">
   <link rel="canonical" href="https://opusdeisong.github.io/">
   <meta property="og:title" content="Woojung Song">
-  <meta property="og:description" content="Evaluating language-model agents across tools, users, and social contexts to improve reliability and human simulation.">
+  <meta property="og:description" content="Understanding agent behavior through behavioral evaluation, tool interaction, and human simulation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://opusdeisong.github.io/">
   <meta property="og:image" content="https://opusdeisong.github.io/images/profile.jpg">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Woojung Song">
-  <meta name="twitter:description" content="Evaluating language-model agents across tools, users, and social contexts to improve reliability and human simulation.">
+  <meta name="twitter:description" content="Understanding agent behavior through behavioral evaluation, tool interaction, and human simulation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
     <section class="profile" aria-label="Introduction">
       <div class="profile-copy">
         <p>I'm an integrated M.S.&ndash;Ph.D. student in Data Science at Seoul National University, advised by <a href="https://yohanjo.github.io/" target="_blank" rel="noopener noreferrer">Yohan Jo</a> in the HOLI Lab.</p>
-        <p><strong>I study how language models and agents behave in practice.</strong> I build evaluations of tool use, user interaction, and the expression of values and personas, with the goal of making agents more reliable and simulations of people more faithful.</p>
+        <p><strong>I study how language models and agents make decisions in context.</strong> I develop ways to measure and guide their behavior, with the goal of building agents that work reliably with people and simulate human behavior faithfully.</p>
         <div class="profile-contact">
           <a class="profile-email" href="mailto:opusdeisong@snu.ac.kr">opusdeisong@snu.ac.kr</a>
           <nav class="links" aria-label="Academic profiles">
@@ -61,50 +61,23 @@
     </aside>
 
     <section aria-labelledby="research-heading">
-      <h2 id="research-heading">Research</h2>
+      <h2 id="research-heading">Research interests</h2>
+      <p class="research-intro">I develop evaluations grounded in realistic interactions, then use them to study what shapes behavior and how to improve it. This connects three directions in my work:</p>
       <div class="research-directions">
         <div class="research-direction">
-          <h3>Agent behavior and reliability</h3>
-          <p>When do agents ask questions, trust a tool, or change their approach? I study these behavioral tendencies and failures that emerge when tools are unreliable or users are hard to collaborate with.</p>
-          <p class="research-related">Related work: <a href="publications.html#pa-tool">PA-Tool</a>, <a href="publications.html#ncuser">NCUser</a></p>
+          <h3>Measuring model behavior</h3>
+          <p>I develop evaluations of the values models express in everyday responses <a class="research-cite" href="https://aclanthology.org/2025.acl-long.838/" target="_blank" rel="noopener noreferrer" title="Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically Valid Items" aria-label="ACL 2025: Value Portrait: Assessing Language Models' Values through Psychometrically and Ecologically Valid Items">[ACL &rsquo;25]</a> and the behavioral tendencies agents exhibit across tasks <a class="research-cite" href="https://arxiv.org/abs/2609.32795" target="_blank" rel="noopener noreferrer" title="AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks" aria-label="arXiv 2026: AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks">[arXiv &rsquo;26]</a>. I also examine when questionnaire-based profiles are misleading, including gaps with generated behavior <a class="research-cite" href="https://arxiv.org/abs/2509.10078" target="_blank" rel="noopener noreferrer" title="Human Psychometric Questionnaires Mischaracterize LLM Behavior" aria-label="EMNLP 2026: Human Psychometric Questionnaires Mischaracterize LLM Behavior">[EMNLP &rsquo;26]</a> and contamination from pretraining <a class="research-cite" href="https://arxiv.org/abs/2510.07175" target="_blank" rel="noopener noreferrer" title="Quantifying Data Contamination in Psychometric Evaluations of LLMs" aria-label="EACL Findings 2026: Quantifying Data Contamination in Psychometric Evaluations of LLMs">[EACL Findings &rsquo;26]</a>.</p>
         </div>
         <div class="research-direction">
-          <h3>Values, personas, and human simulation</h3>
-          <p>Do a model's stated values and persona predict its actions? I study this gap and how simulated people and fictional characters should respond to changes in context and time.</p>
-          <p class="research-related">Related work: <a href="publications.html#value-portrait">Value Portrait</a>, <a href="publications.html#virtual-respondents">Virtual Respondents</a></p>
+          <h3>Understanding agent decisions</h3>
+          <p>I study how tool interfaces <a class="research-cite" href="https://arxiv.org/abs/2510.07248" target="_blank" rel="noopener noreferrer" title="Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models" aria-label="ACL 2026: Don't Adapt Small Language Models for Tools; Adapt Tool Schemas to the Models">[ACL &rsquo;26]</a>, unreliable tool outputs <a class="research-cite" href="https://arxiv.org/abs/2609.05587" target="_blank" rel="noopener noreferrer" title="Agents' Overreliance on Unreliable Tools" aria-label="arXiv 2026: Agents' Overreliance on Unreliable Tools">[arXiv &rsquo;26]</a>, and information sources <a class="research-cite" href="https://arxiv.org/abs/2610.03195" target="_blank" rel="noopener noreferrer" title="Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It" aria-label="arXiv 2026: Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It">[arXiv &rsquo;26]</a> shape agent decisions. These analyses guide interventions to improve tool use and reduce reliance on misleading signals.</p>
+        </div>
+        <div class="research-direction">
+          <h3>Simulating human behavior</h3>
+          <p>I develop simulations that account for how personal traits interact with situations <a class="research-cite" href="https://arxiv.org/abs/2507.05890" target="_blank" rel="noopener noreferrer" title="Psychometric Item Validation Using Virtual Respondents with Trait-Response Mediators" aria-label="TACL 2026: Psychometric Item Validation Using Virtual Respondents with Trait-Response Mediators">[TACL &rsquo;26]</a> and how characters change over time <a class="research-cite" href="https://arxiv.org/abs/2606.05553" target="_blank" rel="noopener noreferrer" title="ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?" aria-label="EMNLP 2026: ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?">[EMNLP &rsquo;26]</a>. I also use simulated user behavior to evaluate and train agents for conversations involving impatience, digressions, and incomplete requests <a class="research-cite" href="https://arxiv.org/abs/2509.23124" target="_blank" rel="noopener noreferrer" title="Non-Collaborative User Simulators for Tool Agents" aria-label="ICLR 2026: Non-Collaborative User Simulators for Tool Agents">[ICLR &rsquo;26]</a>.</p>
         </div>
       </div>
-    </section>
-
-    <section aria-labelledby="selected-heading">
-      <div class="section-heading">
-        <h2 id="selected-heading">Selected research</h2>
-        <a class="section-link" href="publications.html">All publications <span aria-hidden="true">&rarr;</span></a>
-      </div>
-      <article class="selected-work">
-        <p class="work-meta">Preprint &middot; 2026 <span>Co-first author</span></p>
-        <h3><a href="publications.html#agenthabit">AgentHabit: Characterizing Distinct Behaviors of Agents on Everyday Tasks</a></h3>
-        <p>Task success tells only part of the story. We profile 18 models along 23 behavioral axes across 86 everyday tasks, revealing distinct tendencies in how agents ask, act, and explain.</p>
-        <p class="work-links"><a href="https://arxiv.org/abs/2609.32795" target="_blank" rel="noopener noreferrer">Paper</a><a href="publications.html#agenthabit">Authors &amp; details</a></p>
-      </article>
-      <article class="selected-work">
-        <p class="work-meta">Preprint &middot; 2026 <span>Co-first author</span></p>
-        <h3><a href="publications.html#tool-overreliance">Agents' Overreliance on Unreliable Tools</a></h3>
-        <p>Agents often pass incorrect tool outputs to users even when their reasoning notices a conflict. We test this across 14 models and find that verification prompts reduce the problem.</p>
-        <p class="work-links"><a href="https://arxiv.org/abs/2609.05587" target="_blank" rel="noopener noreferrer">Paper</a><a href="publications.html#tool-overreliance">Authors &amp; details</a></p>
-      </article>
-      <article class="selected-work">
-        <p class="work-meta">EMNLP 2026 &middot; Main <span>Co-first author</span></p>
-        <h3><a href="publications.html#arcane">ArcANE: Do Role-Playing Language Agents Stay in Character at the Right Time?</a></h3>
-        <p>A character's beliefs and motivations change over a story. ArcANE evaluates whether role-playing agents reflect the character at the right point in that story.</p>
-        <p class="work-links"><a href="https://arxiv.org/abs/2606.05553" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://holi-lab.github.io/ArcANE/" target="_blank" rel="noopener noreferrer">Project</a><a href="publications.html#arcane">Authors &amp; details</a></p>
-      </article>
-      <article class="selected-work">
-        <p class="work-meta">EMNLP 2026 &middot; Main <span>Co-first author</span></p>
-        <h3><a href="publications.html#psychometric-behavior">Human Psychometric Questionnaires Mischaracterize LLM Behavior</a></h3>
-        <p>A model's questionnaire answers can diverge from its responses to realistic user queries. Persona effects on questionnaires do not reliably carry over to generated behavior.</p>
-        <p class="work-links"><a href="https://arxiv.org/abs/2509.10078" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://holi-lab.github.io/Human-Psychometric-Questionnaires-Mischaracterize-LLM-Behavior/" target="_blank" rel="noopener noreferrer">Project</a><a href="publications.html#psychometric-behavior">Authors &amp; details</a></p>
-      </article>
+      <p class="research-more"><a href="publications.html">All publications <span aria-hidden="true">&rarr;</span></a></p>
     </section>
 
     <section aria-labelledby="news-heading">
