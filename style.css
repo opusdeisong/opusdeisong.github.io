@@ -136,7 +136,15 @@ h2 {
   font-size: 0.85rem;
   line-height: 1.7;
 }
-.research-lead { font-size: 0.88rem; line-height: 1.8; }
+.research-topics { display: grid; gap: 0.85rem; }
+.research-topic {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0.15rem 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+.research-topic h3 { font-size: inherit; font-weight: 600; }
 .research-cite { font-size: 0.8rem; white-space: nowrap; }
 .research-more { margin-top: 0.85rem; font-size: 0.84rem; }
 .research-more a { display: inline-block; padding: 0.3rem 0; }
@@ -243,6 +251,7 @@ h2 {
   .site-name { font-size: 2rem; }
   .site-nav { gap: 0.4rem 1.2rem; margin-top: 0.65rem; }
   .profile { margin-bottom: 1.25rem; }
+  .research-topic { grid-template-columns: minmax(0, 1fr); }
   .availability { padding: 0.75rem 0.85rem; }
   .news-list li { grid-template-columns: 4.8rem minmax(0, 1fr); gap: 0.6rem; padding: 0.45rem 0; }
   .news-list time { font-size: 0.78rem; }
